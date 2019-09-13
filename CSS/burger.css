@@ -1,0 +1,183 @@
+/* PAS IMPORTANT */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+.logo{
+  width: 30vh;
+  position: absolute;
+	left: 5%;
+  top: 7%;
+	z-index: 4;
+}
+
+
+/* BLOC GRIS */
+
+
+.blocgris{
+	position: fixed;
+  right: 0%;
+  padding: 0 30px;
+  background: grey;
+  width: 150px;
+  height: 100%;
+	opacity: 0.2;
+	transition: 0.3s;
+}
+.blocgris.stickbarre{
+	width: 350px;
+}
+
+
+/* BOUTON BURGER */
+
+
+.btn-navigation{
+  position: fixed;
+  right: 87px;
+  top: 50px;
+  z-index: 20;
+  cursor: pointer;
+}
+.btn-navigation .barre{
+  width: 32px;
+  height: 4px;
+  background: black;
+  margin-top: 7px;
+  transition: 0.5s;
+}
+#bar1{
+  width: 70%;
+	float: right;
+}
+#bar2{
+	float: left;
+}
+#bar1.isOpen{
+  background: red;
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px) ;
+  transform: rotate(-45deg) translate(-8px, 6px) ;
+  width: 100%;
+}
+#bar2.isOpen{
+  -webkit-transform: rotate(45deg) translate(-1px, 0px) ;
+ transform: rotate(45deg) translate(-1px, 0px) ;
+ background: red;
+}
+
+
+/* MENU BLANC AVEC LES LANGUES */
+
+
+.nav-langue{
+  position: fixed;
+  right: 0%;
+  padding: 0 30px;
+  background: #ffffff;
+  width: 150px;
+  height: 100%;
+	z-index: 3;
+  transition: transform .3s ease-in-out;
+  -webkit-transition: transform .3s ease-in-out;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+}
+.nav-langue.isOpen{
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+	z-index: 3;
+}
+.nav-langue ul{
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+	padding-left: 0px;
+	list-style: none;
+	margin-left: 20%;
+}
+.nav-langue ul li{
+  margin: 10px 0 0px 0;
+}
+.nav-langue ul li a{
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav-langue p{
+	margin-top: 89%;
+	margin-left: 28%;
+	width: 50%;
+	font-size: 15px;
+	padding-left: 0px;
+	padding-bottom: 20px;
+	border-bottom: solid grey 1px;
+}
+.en:hover{
+	color: red;
+}
+.es:hover{
+	color: red;
+}
+.fr:hover{
+	color: red;
+}
+#fr{
+	color: black;
+}
+#en{
+	color: black;
+}
+#es{
+	color: black;
+}
+
+
+/* MENU BLOC ROUGE */
+
+
+.menu{
+	position: fixed;
+  right: -100%;
+  padding: 0 30px;
+  background: red;
+  width: 200%;
+  height: 100%;
+	z-index: 2;
+	transition: transform .6s ease-in-out;
+	-webkit-transition: transform .6s ease-in-out;
+	transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+}
+.menu.isOpen{
+		z-index: 2;
+	  transform: translateX(0%);
+	  -webkit-transform: translateX(0%);
+}
+.nav-menu li a{
+	color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: .070em;
+}
+.nav-menu{
+	margin: 6% 0 0 3%;
+	list-style: none;
+	width: 37%;
+}
+.nav-menu li{
+	margin-bottom: 1.5%;
+	z-index: 3;
+}
+.gg.grey{
+	opacity: 0.3;
+}
+.gg.grey:hover{
+	opacity: 1;
+	padding-left: 20px;
+	transition: 0.3s;
+}
