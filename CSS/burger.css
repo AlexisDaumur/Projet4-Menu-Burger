@@ -10,6 +10,9 @@ body {
 	left: 5%;
   top: 7%;
 	z-index: 4;
+  background: white;
+  border-radius: 30px;
+  padding: 10px 10px;
 }
 
 
@@ -142,7 +145,7 @@ body {
 	position: fixed;
   right: -100%;
   padding: 0 30px;
-  background: red;
+  background: #d13836;
   width: 200%;
   height: 100%;
 	z-index: 2;
